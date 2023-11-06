@@ -14,7 +14,12 @@
         <!-- Styles -->
 
     <body class="antialiased">
-        <header></header>
+        <header class="relative">
+            <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-2">
+                <img class="w-52 h-auto" src="{{ asset('images/laligaf.png') }}" alt="La Liga F">
+                <h1 class="text-3xl uppercase text-center text-black font-bold">Premios F 2023</h1>
+            </div>
+        </header>
         <main class="">
             <section
                 id="players"
