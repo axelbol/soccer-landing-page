@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'boxing';
+        src: url("/public/font/boxing.ttf");
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: 'boxingStriped';
+        src: url("/public/font/boxing-striped.ttf");
+        font-weight: bold;
+    }
+}

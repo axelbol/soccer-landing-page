@@ -17,7 +17,7 @@
         <header class="relative">
             <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-2">
                 <img class="w-52 h-auto" src="{{ asset('images/laligaf.png') }}" alt="La Liga F">
-                <h1 class="text-3xl uppercase text-center text-black font-bold">Premios F 2023</h1>
+                <h1 class="font-boxing text-6xl uppercase text-center text-black font-bold">Premios F <span class="text-yellow-500 font-striped">2023</span></h1>
             </div>
         </header>
         <main class="">

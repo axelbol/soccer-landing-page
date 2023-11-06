@@ -6,7 +6,12 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+            boxing: ['Boxing', 'sans-serif'],
+            striped: ['BoxingStriped', 'sans-serif'],
+        }
+    },
   },
   plugins: [
     require('tailwindcss-animated'),
