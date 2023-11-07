@@ -13,7 +13,7 @@
         @vite(['resources/css/app.css'])
         <!-- Styles -->
 
-    <body class="antialiased bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-gray-600 to-blue-900">
+    <body class="antialiased bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#131313] via-zinc-900 to-zinc-950">
         <header class="relative">
             <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-2">
                 <img class="w-52 h-auto" src="{{ asset('images/laligaf.png') }}" alt="La Liga F">
@@ -36,13 +36,29 @@
             >
                 <div class="relative w-full">
                     <img class="-left-12 h-5/6 animate-fade-left animate-delay-300 z-50" src="{{ asset('images/alexiabg.png') }}" alt="Alexia">
-                    <img class="left-44 h-4/6 animate-fade-left animate-delay-700 z-40" src="{{ asset('images/atheneabg.png') }}" alt="Athenea">
-                    <img class="left-[22rem] h-[56%] animate-fade-left animate-delay-[1600ms] z-30" src="{{ asset('images/catalinabg.png') }}" alt="Catalina">
+                    <img class="left-40 h-4/6 animate-fade-left animate-delay-700 z-40" src="{{ asset('images/atheneabg.png') }}" alt="Athenea">
+                    <img class="left-[20rem] h-[56%] animate-fade-left animate-delay-[1600ms] z-30" src="{{ asset('images/catalinabg.png') }}" alt="Catalina">
                 </div>
                 <div class="relative w-full">
                     <img class="-right-12 h-5/6 animate-fade-right animate-delay-500 z-50" src="{{ asset('images/jennibg.png') }}" alt="Jenni">
-                    <img class="right-44 h-4/6 animate-fade-right animate-delay-700 z-40" src="{{ asset('images/olgabg.png') }}" alt="Olga">
-                    <img class="right-[22rem] h-[56%] animate-fade-right animate-delay-[1600ms] z-30" src="{{ asset('images/misabg.png') }}" alt="Misa">
+                    <img class="right-40 h-4/6 animate-fade-right animate-delay-700 z-40" src="{{ asset('images/olgabg.png') }}" alt="Olga">
+                    <img class="right-[20rem] h-[56%] animate-fade-right animate-delay-[1600ms] z-30" src="{{ asset('images/misabg.png') }}" alt="Misa">
+                </div>
+                <div
+                    id="info"
+                    class="absolute z-50 bottom-20 mx-auto left-1/2 -translate-x-1/2"
+                >
+                    <div class="flex flex-col">
+                        <div class="px-5 pt-4 pb-4 bg-white text-black text-center">
+                            <h2 class="font-boxing text-3xl">31 de diciembre</h2>
+                        </div>
+                        <div class="px-5 pt-3 pb-3 bg-black text-white text-center">
+                            <a class="hover:contrast-150 hover:scale-105 transition inline-block font-boxing text-4xl" href="https:://laligaf.es" target="_blank" rel="noopener noreferrer">laligaf.es</a>
+                        </div>
+                        <div class="px-5 pt-4 pb-4 bg-sky-500 text-black text-center">
+                            <a class="hover:contrast-150 hover:scale-105 transition inline-block font-boxing text-2xl" href="https:://laligaf.es/tickets" target="_blank" rel="noopener noreferrer">laligaf.es/tickets</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
