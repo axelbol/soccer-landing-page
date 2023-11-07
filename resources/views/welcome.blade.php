@@ -13,11 +13,14 @@
         @vite(['resources/css/app.css'])
         <!-- Styles -->
 
-    <body class="antialiased">
+    <body class="antialiased bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-800 via-gray-600 to-blue-900">
         <header class="relative">
             <div class="absolute left-1/2 -translate-x-1/2 flex flex-col gap-1 justify-center items-center top-2">
                 <img class="w-52 h-auto" src="{{ asset('images/laligaf.png') }}" alt="La Liga F">
-                <h1 class="font-boxing text-6xl uppercase text-center text-black font-bold">Premios F <span class="text-yellow-500 font-striped">2023</span></h1>
+                <h1 class="font-boxing text-6xl text-center text-black">
+                    <span class="bg-clip-text text-transparent inline-block leading-relaxed bg-gradient-to-b from-green-800 via-green-400 to-purple-700">Premios F </span>
+                    <span class="bg-clip-text text-transparent inline-block leading-relaxed bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-700 font-striped">2023</span>
+                </h1>
             </div>
         </header>
         <main class="">

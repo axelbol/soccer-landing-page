@@ -4,13 +4,13 @@
 
 @layer base {
     @font-face {
-        font-family: 'boxing';
+        font-family: 'Boxing';
         src: url("/public/font/boxing.ttf");
         font-weight: bold;
     }
 
     @font-face {
-        font-family: 'boxingStriped';
+        font-family: 'BoxingStriped';
         src: url("/public/font/boxing-striped.ttf");
         font-weight: bold;
     }
