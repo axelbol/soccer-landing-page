@@ -60,6 +60,22 @@
                         </div>
                     </div>
                 </div>
+
+                <div
+                    id="versus"
+                    class="absolute z-50 bottom-20 mx-auto left-1/2 -translate-x-1/2 flex flex-col gap-y-8 opacity-0 invisible"
+                >
+                    <div class="px-6 pt-4 pb-4 bg-black text-white text-center">
+                        <h3 class="font-boxing text-7xl">ALEXIA</h3>
+                    </div>
+
+                    <span class="left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 font-striped text-yellow-500 text-7xl block absolute">
+                        AND
+                    </span>
+                    <div class="px-6 pt-4 pb-4 bg-white text-black text-center">
+                        <h3 class="font-boxing text-7xl">JENNI</h3>
+                    </div>
+                </div>
             </section>
         </main>
         <footer></footer>
@@ -70,11 +86,17 @@
     const $players = document.querySelector("#players")
     const $playersImages = $players.querySelectorAll("img")
 
+    const $info = document.querySelector("#info")
+    const $versus = document.querySelector("#versus")
+
     $playersImages.forEach(($img) => {
         $img.addEventListener("mouseleave", () => {
             $playersImages.forEach(($img) => {
                 $img.setAttribute("style", "transition: all 1s ease-in-out")
             })
+
+            $info.setAttribute("style", "opacity: 1; transition: all .3s ease-in-out")
+            $versus.setAttribute("style", "opacity: 0; transition: all .3s ease-in-out; visibility: hidden")
         })
 
         $img.addEventListener("mouseenter", () => {
@@ -86,6 +108,14 @@
                 $playersImages[position + $playersImages.length / 2],
             ]
             // console.log(leftPlayer, rightPlayer)
+
+            //hide info players
+            $info.setAttribute("style", "opacity: 0; transition: all .3s ease-in-out")
+            $versus.setAttribute("style", "opacity: 1; transition: all .3s ease-in-out; visibility: visible")
+            const [firstPlayerName, secondPlayerNmae] = $versus.querySelectorAll("h3")
+            firstPlayerName.innerText = leftPlayer.alt
+            secondPlayerNmae.innerText = rightPlayer.alt
+
             // hide players not included
             $playersImages.forEach(($img) => {
                 $img.setAttribute(
